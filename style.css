@@ -88,6 +88,9 @@ gap: 24px;
 padding-top: 25PX;
 }
 
+.logo-search{
+    visibility: collapse;
+}
 
 input{
     position: relative;
@@ -508,6 +511,10 @@ li{
         max-width: 924px;
     }
 
+    .h2-title{
+        position: relative;
+        left: 0;
+    }
     .filterbar{
         height: 91px;
         width: 668px;
@@ -804,6 +811,7 @@ padding-bottom:1px;
             padding: 0;
             display: flex;
             flex-direction: column;
+            max-width: 375px;
         }
         .navigation{
             width: 375px;
@@ -935,10 +943,11 @@ padding-bottom:1px;
             padding-top: 0;
         }
 
-        .filterbar{
+        .grid{
             display: grid;
-            grid-template-columns: 40% 40%;
-            grid-template-rows: 40%;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 20px;
         }
         
         .search{
@@ -947,9 +956,63 @@ padding-bottom:1px;
         }
 
         .submit{
-            width: ;
+            visibility: collapse;
         }
-    
 
+        .logo-search{
+            visibility: visible;
+            color: #000;
+            background-color: #0065FC;
+        }
+
+        .filter-text{
+            font-size: 14px;
+        }
+
+        .h2-title{
+            position: relative;
+            top: 0;
+            left: 0;
+        } 
+
+        .main-container{
+            margin-top: 0;
+            width: 375px;
+            height: 1396px;
+        }
+
+        .hebergements-marseille{
+            width: 375px;
+            max-width: 375px;
+            border-radius: 0 0 0 0;
+            padding:0;
+            height: 1396px;
+        }
+
+        .hebergements{
+            padding: 20px;
+        }
+
+        .marseille-cards{
+            height: 652px;
+            width: 335px;
+            gap: 15px;
+        }
+
+        .ligne1 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ligne2{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card{
+            width: 335px;
+            height: 192px;
+        }
+        
 
     }
