@@ -52,6 +52,10 @@ header{
     padding:0 0px 0 50px;
 }
 
+.head{
+    max-width: 1340px;
+}
+
 .part1{
     width: 90%;
     height: 281px;
@@ -66,7 +70,7 @@ header{
 
 H1{
     height: 26px;
-    font-size: 1.4em;
+    font-size: 1.375em;
     width: 100%;
 }
 
@@ -180,6 +184,11 @@ color: var(--Black, #000);
     background-color: #F2F2F2;
 }
 
+.grid{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
 
 .filter-text{
     font-family: "Raleway";
@@ -478,6 +487,16 @@ line-height: normal;
     padding: 30px;
 }
 
+.footer-ligne{
+    display: flex;
+    flex-direction: row;
+}
+
+li{
+    font-size: 18px;
+}
+
+
 @media (max-width: 1390px){
     body{
         padding: auto;
@@ -485,7 +504,26 @@ line-height: normal;
         max-width: 1024px;
     }
 
+    .head{
+        max-width: 924px;
+    }
+
+    .filterbar{
+        height: 91px;
+        width: 668px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 30%  100%;
+        margin-bottom: 10px;
+    }
+
+    h2{
+        padding-top:25px ;
+    }
+
+    
     .main-container{
+        margin-top: 35px;
         width: 57.75em;
         height: 914px;
     }
@@ -602,6 +640,8 @@ line-height: normal;
         font-size: 16px;
     }
 
+
+
     }
 
 
@@ -609,7 +649,6 @@ line-height: normal;
     body{
         max-width: 1440px;
         margin: auto;
-
     }
 
 
@@ -620,6 +659,18 @@ line-height: normal;
     body{
         max-width: 880px;
         padding: 0 50px;
+    }
+
+    .head{
+        max-width: 880px;
+    }
+
+    .navigation{
+        max-width: 880px;
+    }
+
+    .navigations{
+        max-width: 880px;
     }
 
     .main-container{
@@ -751,9 +802,154 @@ padding-bottom:1px;
     @media (max-width:375px) {
         body{
             padding: 0;
-            margin: 0;
-            display: inline-block;
+            display: flex;
             flex-direction: column;
         }
-    }
+        .navigation{
+            width: 375px;
+            display: flex;
+            flex-direction: row;
+        }
 
+        .head{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-ligne{
+            display: flex;
+            flex-direction: column;
+        }
+
+        footer{
+            width: 375px;
+            height: 461px;
+        }
+
+        a{
+            padding: 0;
+        }
+
+        .footer-col{
+            padding-bottom: 35px;
+        }
+
+        .cards-contents{
+            display: flex;
+            flex-direction: column;
+            width: 315px;
+            height: 845px;
+        }
+
+        .activites-cards{
+            width: 315px;
+            height: 200px;
+        }
+
+        .activites-cards img{
+            width: 315px;
+            height: 141px;
+            border-radius: 20px 20px 0 0;
+        }
+
+        .cards-contents{
+            width: 315px;
+            height: 59px;
+            font-size: 16px;
+        }
+
+        .title-img{
+            width: 315px;
+        }
+
+        .sections-titles{
+            padding-left: 0;
+        }
+
+        .main-activites{
+            padding: 30px;
+        }
+
+        .logobooki{
+            width: 61.1px;
+            height: 19px;
+            padding: auto;
+            margin: auto;
+        }
+
+        header{
+            width: 375px;
+            height: 115px;
+        }
+
+        .A{
+            margin: 0;
+        }
+
+        .navigation a{
+            width: 187.5px;
+            height: 19px;
+            text-align: center;
+        }
+
+        .navigation{
+            padding:0;
+        }
+
+        .part1{
+            width: 335px;
+            height: 432px;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .headline{
+            width: 335px;
+            height: 79px;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        .p1{
+            margin-top: 35px;
+        }
+
+        .search{
+            padding-top: 0;
+        }
+
+        .filterbar{
+            padding-top: 0;
+            width: 335px;
+            height: 161px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .information{
+            padding-top: 0;
+        }
+
+        .h2-title{
+            padding-top: 0;
+        }
+
+        .filterbar{
+            display: grid;
+            grid-template-columns: 40% 40%;
+            grid-template-rows: 40%;
+        }
+        
+        .search{
+            width: 335px;
+            height: 49px;
+        }
+
+        .submit{
+            width: ;
+        }
+    
+
+
+    }
