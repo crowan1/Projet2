@@ -10,6 +10,7 @@ body{
     padding: 0px 50px;
     flex-direction: column;
     align-self: stretch;
+    gap: 35px;
 }
 a{
     text-decoration: none;
@@ -857,12 +858,15 @@ padding-bottom:1px;
 
     }
 
-    @media (max-width:375px) {
+    @media (max-width:550px) {
         body{
             padding: 0;
             display: flex;
             flex-direction: column;
             max-width: 375px;
+            margin: auto;
+            order: 1 2 3 4 ;
+            gap: 35px;
         }
         .navigation{
             width: 375px;
@@ -883,8 +887,7 @@ padding-bottom:1px;
         footer{
             width: 375px;
             height: 461px;
-            position: relative;
-            top: 3657px;
+
         }
 
         .container{
@@ -919,13 +922,14 @@ padding-bottom:1px;
             height: 905px;
             width: 335px;
             margin: 0;
+            order: 3;
         }
 
         .activites-marseille{
             width: 335px;
             height: 815px;
-            padding: 0;
             margin: 0;
+            order: 3;
         }
 
         .activites-cards img{
@@ -949,9 +953,8 @@ padding-bottom:1px;
         }
 
         .main-activites{
-            padding: 30px;
-            position: relative;
-            top: 2700px;
+            order:3;
+            margin-top:655px;
         }
 
         .logobooki{
@@ -1058,6 +1061,7 @@ padding-bottom:1px;
             padding:0;
             height: 1396px;
             background-color: #FFF;
+            order: 2;
         }
 
 
@@ -1065,6 +1069,7 @@ padding-bottom:1px;
             padding: 20px;
             height: 1396px;
             background-color: #FFF;
+            order: 2;
         }
 
         .marseille-cards{
@@ -1112,7 +1117,6 @@ padding-bottom:1px;
         width: 335px;
         height: 569px; 
         position: relative;
-        top: 1700px;
         background-color: #F2F2F2;
         padding: 30px 20px;
         margin: 0;
@@ -1120,6 +1124,7 @@ padding-bottom:1px;
 
        .populaires{
         height: 509px;
+        order: 1;
        }
        .populaires-cards{
         gap: 15px;
@@ -1171,10 +1176,12 @@ padding-bottom:1px;
        .footer{
         padding: 30px;
         gap: 50px;
+        order: 4;
        }
 
        .container{
         padding: 0;
+        order: 4;
        }
 
        .footer-col{
@@ -1183,6 +1190,18 @@ padding-bottom:1px;
 
        .footer-ligne{
         gap: 50px;
+       }
+
+       .main-container{
+        order: 1 2;
+       }
+
+       .main-ligne{
+        gap: 15px;
+       }
+
+       .sections-titles{
+        padding: 0 0 0 20px;
        }
 
     }
