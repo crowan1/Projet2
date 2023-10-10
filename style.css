@@ -18,7 +18,7 @@ a {
     color: black;
 }
 
-.logosearch{
+.logosearch {
     display: none;
 }
 
@@ -898,7 +898,6 @@ li {
         flex-direction: column;
         max-width: 375px;
         margin: auto;
-        order: 1 2 3 4;
         gap: 35px;
     }
 
@@ -912,7 +911,6 @@ li {
         display: flex;
         flex-direction: column;
         max-width: 375px;
-
     }
 
     .footer-ligne {
@@ -1068,7 +1066,7 @@ li {
         height: 49px;
     }
 
-    .text{
+    .text {
         border-right: none;
     }
 
@@ -1249,9 +1247,6 @@ li {
         gap: 50px;
     }
 
-    .main-container {
-        order: 1 2;
-    }
 
     .main-ligne {
         gap: 15px;
@@ -1278,7 +1273,7 @@ li {
         color: black;
     }
 
-    .logosearch{
+    .logosearch {
         display: block;
         background-color: #0065FC;
         padding: 15px 16px;
