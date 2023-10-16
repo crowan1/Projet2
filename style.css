@@ -23,6 +23,7 @@ a {
 }
 
 
+
 a:hover {
     color: #0065FC;
 }
@@ -424,7 +425,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     gap: 30px;
-
+    margin-left: 20px;
 }
 
 .activites-cards {
@@ -899,6 +900,7 @@ li {
         max-width: 375px;
         margin: auto;
         gap: 35px;
+        overflow-x: hidden;
     }
 
     .navigation {
@@ -948,7 +950,6 @@ li {
     .activites-cards {
         width: 315px;
         height: 200px;
-        margin-left: 25px;
         margin-right: 25px;
     }
 
@@ -1192,6 +1193,7 @@ li {
         width: 223px;
         height: 136px;
         padding: 10px 5px 5px 15px;
+        margin-left: 0;
     }
 
     .cards-txt {
