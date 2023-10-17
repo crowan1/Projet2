@@ -11,6 +11,7 @@ body {
     flex-direction: column;
     align-self: stretch;
     gap: 35px;
+    overflow-x: hidden;
 }
 
 a {
