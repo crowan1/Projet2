@@ -66,14 +66,28 @@ nav {
     color: #0065FC;
 }
 
+.lien-filter:hover{
+    background-color: #F2F2F2;
+    border-radius: 25Px;
+}
+#pligne{
+    width: 95px;
+}
 
 .navigation a:hover{
     border-top: solid 2px #0065FC;
 }
 
-.navlien{
-
+.p-filter{
+    color: var(--Black, #000);
+font-family: Raleway;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+width: 100%;
 }
+
 
 header {
     height: 79px;
@@ -461,13 +475,13 @@ article {
 }
 
 footer {
-    background-color: #F2F2F2;
     width: 100%;
     height: 163px;
 }
 
 .container {
     padding: 20px 20px 0 20px;
+    background-color: #F2F2F2;
 }
 
 
@@ -571,12 +585,17 @@ li {
 
     .hebergements-marseille{
         width: 100%;
+        height: 611px;
     }
 
     .hebergements-and-populaires{
-        width: 94%;
+        width: 100%;
         height: 252px;
-        padding-bottom: 0;
+        padding: 0;
+    }
+
+    .populaires{
+        margin: 30px;
     }
 
     .populaires-cards{
@@ -596,6 +615,8 @@ li {
         padding-top: 20px;
         margin-bottom: 10px;
     }
+
+   
 
 
     .h2-title{
@@ -626,3 +647,24 @@ li {
         padding: 10px;
     }
 }
+    
+
+@media  screen and (max-width:800px){
+
+    .filterbar{
+        margin-top: 30px;
+        margin-bottom: 35px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .hebergements-marseille{
+        margin-top: 50px;
+    }
+
+}
+
+
