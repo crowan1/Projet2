@@ -101,7 +101,7 @@ header {
 
 
 .part1 {
-    width: 90%;
+    width: 100%;
     height: 281px;
     gap: 35px;
 }
@@ -109,12 +109,6 @@ header {
 .headline {
     height: 3.313em;
     gap: 8px;
-}
-
-H1 {
-    height: 26px;
-    font-size: 1.375em;
-    width: 100%;
 }
 
 .p1 {
@@ -325,7 +319,7 @@ main {
 .ligne2 {
     display: flex;
     justify-content: space-evenly;
-    padding-bottom: 30px;
+    padding: 0 10px 30px 10px;
 }
 
 .ligne1 a{
@@ -601,7 +595,7 @@ li {
     .populaires-cards{
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
         width: 100%;
     }  
     .populaires-cards a{
@@ -614,6 +608,7 @@ li {
         height: 91px;
         padding-top: 20px;
         margin-bottom: 10px;
+        width: 668px;
     }
 
    
@@ -649,22 +644,183 @@ li {
 }
     
 
-@media  screen and (max-width:800px){
 
-    .filterbar{
-        margin-top: 30px;
-        margin-bottom: 35px;
+@media screen and (max-width: 767px){
+    .bodypage{
+        min-width: 320px;
+        max-width: 500px ;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
     }
+
+    .head{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .headline{
+        height: auto;
+    }
+
+    .part1{
+        margin-top: 50px;
+        height: auto;
+        padding: 0 20px;
+    }
+    .logobooki{
+        margin: auto;
+    }
+
+    .navlien{
+        border: none;
+        border-bottom: solid 2px #0065FC;
+        padding-bottom: 15px;
+    }
+    .navigation a {
+        width: 50%;
+        text-align: center;
+    }
+
+    .navigation a:hover {
+        border-top: none;
+    }
+
+    .navLien:hover{
+        padding-bottom: 15px;
+        border-bottom: solid 2px #0065FC;
+    }
+
+
+       .navigation{
+        width: 100%;
+    }
+
+    .part1 h1{
+        margin-bottom: 8px;
+    }
+
+
+    .submit{
+        display: none;
+    }
+
+    .logosearch{
+        display: block;
+        background-color: #0065FC;
+        padding: 15px;
+        border-radius:20px ;
+        position: relative;
+        left: -60px;
+    }
+
     .grid{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 160PX 170px;
         grid-template-rows: 1fr 1fr;
     }
 
-    .hebergements-marseille{
-        margin-top: 50px;
+    .filterbar{
+        width: 40%;
+        margin-top: 35px;
     }
+
+
+    .information{
+        height: auto;
+        margin-top: 45px;
+    }
+
+    .hebergements-marseille{
+        height: auto;
+        background-color: #FFF;
+        order: 2;
+    }
+
+    .main-container{
+        margin-top: 0;
+        height: auto;
+    }
+
+    .button-main{
+        padding-top: 20px;
+        background: none;
+    }
+
+    .ligne1, .ligne2{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 15px;
+        width: 96%;
+    }
+
+    .marseille-cards{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .ligne1 a {
+        width: 100%;
+    }
+
+
+ .ligne2 a {
+    padding-top: 15px;
+    width: 100%;
+ }
+
+ .card-content{
+    padding-left: 15px;
+ }
+
+ .card img{
+    width: 98%;
+ }
+
+ .hebergements-and-populaires{
+    height: auto;
+ }
+
+ .populaires-cards{
+    flex-direction: column;
+ }
+
+ .populaires-cards a {
+    width: 100%;
+ }
+
+ .cards-contents{
+    flex-direction: column;
+}
+ .activites-case{
+    width: 100%;
+ }
+
+ .main-activites{
+    height: auto;
+ }
+
+
+ .populaires{
+    margin: 20px;
+ }
+
+ .footer-ligne{
+    flex-direction: column;
+ }
+ .footer-col{
+    width: 100%;
+ }
+
+
+
 
 }
 
-
+@media screen and(max-with:385px) {
+    .grid{
+        display: grid;
+    }
+}
