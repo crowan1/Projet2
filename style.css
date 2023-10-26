@@ -10,6 +10,7 @@
     align-self: stretch;
     gap: 35px;
     padding: 0 50Px;
+    overflow-X: hidden;
 }
 
 
@@ -649,6 +650,7 @@ li {
     .bodypage{
         min-width: 320px;
         max-width: 500px ;
+        margin: 0;
         margin: auto;
         display: flex;
         flex-direction: column;
@@ -668,6 +670,7 @@ li {
         margin-top: 50px;
         height: auto;
         padding: 0 20px;
+        max-width: 90%;
     }
     .logobooki{
         margin: auto;
@@ -697,7 +700,7 @@ li {
         width: 100%;
     }
 
-    .part1 h1{
+    .part1 h1{ 
         margin-bottom: 8px;
     }
 
@@ -706,23 +709,32 @@ li {
         display: none;
     }
 
+    .search{
+        gap: 0;
+        width: auto;
+        width: 300px;
+    }
+
     .logosearch{
         display: block;
         background-color: #0065FC;
         padding: 15px;
         border-radius:20px ;
+    }
+
+    .search input {
         position: relative;
-        left: -60px;
+        left: 0;
     }
 
     .grid{
         display: grid;
-        grid-template-columns: 160PX 170px;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+
     }
 
     .filterbar{
-        width: 40%;
+        width: 80%;
         margin-top: 35px;
     }
 
@@ -736,6 +748,10 @@ li {
         height: auto;
         background-color: #FFF;
         order: 2;
+    }
+
+    .hebergements-and-populaires{
+        width: 100%;
     }
 
     .main-container{
@@ -814,13 +830,22 @@ li {
     width: 100%;
  }
 
-
-
-
 }
 
-@media screen and(max-with:385px) {
+@media screen and (max-width:390px) {
     .grid{
-        display: grid;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .filterbar{
+        height: auto;
+        margin: 0;
+        padding-top: 0;
+    }
+
+    .information{
+        margin-top: 0;
     }
 }
